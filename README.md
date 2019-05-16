@@ -2,6 +2,6 @@
 State Pattern example in C++
 
 to compile:
-'''sh
+```sh
 mkdir build && cd build && cmake .. && make
-'''
+```
