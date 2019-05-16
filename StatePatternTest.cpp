@@ -3,7 +3,7 @@
 #include <string>
 
 class PlayerFixture : public testing::Test {
-  public:
+  protected:
     void SetUp() override {
       player = new MusicPlayer();
     }
