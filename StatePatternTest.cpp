@@ -15,7 +15,7 @@ class PlayerFixture : public testing::Test {
   MusicPlayer *player;
 };
 
-TEST_F(PlayerFixture, TestName) {
+TEST_F(PlayerFixture, InitialStateIsStopped) {
   ASSERT_STREQ("Stopped", player->GetState().c_str());
 }
 
