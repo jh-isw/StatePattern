@@ -17,8 +17,8 @@ public:
 	PlayingState();
 	virtual ~PlayingState();
 
-	virtual void Pause(MusicPlayer * player);
-	virtual void Stop(MusicPlayer * player);
+	virtual void Pause(MusicPlayer * player) override;
+	virtual void Stop(MusicPlayer * player) override;
 };
 
 #endif /* PLAYINGSTATE_H_ */

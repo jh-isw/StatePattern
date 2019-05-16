@@ -17,8 +17,8 @@ public:
 	PausedState();
 	virtual ~PausedState();
 
-	virtual void Play(MusicPlayer * player);
-	virtual void Stop(MusicPlayer * player);
+	virtual void Play(MusicPlayer * player) override;
+	virtual void Stop(MusicPlayer * player) override;
 };
 
 #endif /* PAUSEDSTATE_H_ */

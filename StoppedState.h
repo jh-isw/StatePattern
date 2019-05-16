@@ -17,7 +17,7 @@ public:
 	StoppedState();
 	virtual ~StoppedState();
 
-	virtual void Play(MusicPlayer * player);
+	virtual void Play(MusicPlayer * player) override;
 };
 
 #endif /* STOPPEDSTATE_H_ */
