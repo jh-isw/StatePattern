@@ -12,6 +12,7 @@
 #include "PausedState.h"
 
 #include <iostream>
+#include <string>
 
 MusicPlayer::MusicPlayer()
 : m_pState(new StoppedState()){
@@ -53,4 +54,8 @@ void MusicPlayer::SetState(State state)
 	}
 
 	std::cout << m_pState->GetName() << " state\n";
+}
+
+std::string MusicPlayer::GetState(){
+	return m_pState->GetName();
 }

@@ -8,6 +8,8 @@
 #ifndef MUSICPLAYER_H_
 #define MUSICPLAYER_H_
 
+#include <string>
+
 class MusicPlayerState;
 
 class MusicPlayer {
@@ -27,6 +29,7 @@ public:
 	void Stop();
 
 	void SetState(State state);
+	std::string GetState();
 
 private:
 	MusicPlayerState * m_pState;
